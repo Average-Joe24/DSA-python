@@ -1,0 +1,47 @@
+def heapify(arr, n, i):
+# Find the largest among root, left child and right child
+ small=i
+ I = 2* i
+ r=2*i+2
+ if 1 < n and arr[i] > arr[1]:
+   small = I
+ if r < n and arr [small] > arr[r]:
+   small=r
+#Swap and continue heapifying if root is not largest
+ if small!= i:
+   arr[i], arr[small] = arr[small], arr[i]
+   heapify(arr, n, small)
+# Function to insert an element into the tree
+def insert (array, newNum):
+  size = len (array)
+  if size == 0:
+    array.append (newNum)
+ else:
+    array.append (newNum)
+for i in range ((size // 2) - 1, -1, -1):
+ heapify(array, size, i)
+ # Function to delete an element from the tree
+ def deleteNode (array, num):
+  size = len (array)
+  i=0
+for i in range (0, size) :
+ if num == array[i]:
+ break
+array[i], array[size - 1) = array[size - 1], array[i]
+array.remove (arr[size - 1])
+for i in range ((len (array) // 2) - 1, -1, -1):
+ heapify(array, len (array), i)
+ arr = (]
+insert (arr, 19)
+insert (arr, 1)
+insert (arr, 9)
+insert (arr, 7)
+insert (arr, 4)
+insert (arr, 10)
+insert (arr, 13)
+insert(arr, 15)
+insert (arr, 8)
+insert (arr, 3|)
+print ("After insertion Min-Heap array: " + str (arr))
+deleteNode (arr, 1)
+deleteNode (arr, 7)p
